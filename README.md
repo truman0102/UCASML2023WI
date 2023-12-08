@@ -19,17 +19,15 @@ UCASML2023WI
 │       └── test_batch
 ├── model
 │   ├── README.md
-│   ├── ViT
+│   ├── ResNet
 │   │   ├── README.md
-│   │   ├── config.json
-│   │   ├── preprocessor_config.json
-│   │   ├── pytorch_model.bin
-│   │   └── checkpoint
+│   │   ├── resnet50-19c8e357.pth
+│   │   ├── checkpoint.pth
+│   │   └── ...
 │   └── ...
 ├── code
 │   ├── README.md
 │   ├── data.ipynb
-│   ├── vit.ipynb
 │   ├── template.ipynb
 │   ├── model.py
 │   ├── train.py
@@ -52,7 +50,13 @@ You can refer to the [template](/code/template.ipynb) to write your own code
 
 ### Ensemble Model
 
-### Vision Transformer (ViT)
+### ResNet
+
+Introduced in pytorch hub [tutorial](https://pytorch.org/hub/pytorch_vision_resnet/).
+
+See source code [here](https://pytorch.org/vision/0.8/_modules/torchvision/models/resnet.html).
+
+### ~~Vision Transformer (ViT)~~
 
 It was introduced in the paper [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929).
 
