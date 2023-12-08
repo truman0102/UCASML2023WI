@@ -1,1 +1,6 @@
 /data/cifar-10-batches-py
+/data/sample
+/code/__pycache__
+/model/ViT
+/model/SVM
+/model/LR
