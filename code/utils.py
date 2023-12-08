@@ -1,5 +1,7 @@
+from typing import Any
 import cv2
 import os
+import time
 import pickle
 import numpy as np
 
@@ -70,6 +72,23 @@ class Cifar10:
 
     def label_to_name(self, label):
         return self.label_names[label]
+
+
+class EarlyStopping:
+    def __init__(self, patience=10, verbose=False):
+        self.patience = patience
+        self.verbose = verbose
+        self.best_loss = 1e15
+        self.counter = 0
+        self.stop = False
+
+    def save_path(self, path):
+        current_time = time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())
+        file = os.path.join(path, current_time + ".pt")
+        return file
+
+    def __call__(self, *args: Any, **kwds: Any) -> Any:
+        pass
 
 
 if __name__ == "__main__":
