@@ -30,6 +30,7 @@ UCASML2023WI
 │   ├── README.md
 │   ├── data.ipynb
 │   ├── vit.ipynb
+│   ├── template.ipynb
 │   ├── model.py
 │   ├── train.py
 │   ├── test.py
@@ -41,8 +42,15 @@ UCASML2023WI
 └── ...
 ```
 
+You can refer to the [template](/code/template.ipynb) to write your own code
 
 ## Model
+
+### Linear Model
+
+### Non-Linear Model
+
+### Ensemble Model
 
 ### Vision Transformer (ViT)
 
